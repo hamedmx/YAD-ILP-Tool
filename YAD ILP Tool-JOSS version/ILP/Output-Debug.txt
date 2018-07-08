@@ -1,0 +1,12 @@
+﻿>>>>>align(X0, X2, ) :- label(X0, X1, ) ; label(X2, X1, ) ;  pred count:1step: 2 pos coverage:73.0769230769231
+>>>>>align(X0, X3, ) :- label(X0, X1, ) ; label(X3, X1, ) ; label(X3, X4, ) ; label(X3, X4, ) ;  pred count:255step: 4 pos coverage:73.0769230769231
+>>>>>align(X0, X4, ) :- label(X0, X1, ) ; label(X2, X1, ) ; label(X2, X3, ) ; label(X4, X3, ) ;  pred count:338step: 4 pos coverage:73.0769230769231
+>>>>>align(X0, X5, ) :- label(X0, X1, ) ; label(X2, X1, ) ; relatedsynonym(X2, X3, ) ; label(X3, X4, ) ; label(X5, X4, ) ;  pred count:468step: 5 pos coverage:92.3076923076923
+>>>>>align(X0, X4, ) :- relatedsynonym(X0, X1, ) ; relatedsynonym(X2, X1, ) ; label(X2, X3, ) ; label(X4, X3, ) ;  pred count:5103step: 4 pos coverage:73.0769230769231
+>>>>>align(X0, X5, ) :- relatedsynonym(X0, X1, ) ; relatedsynonym(X2, X1, ) ; relatedsynonym(X2, X3, ) ; label(X3, X4, ) ; label(X5, X4, ) ;  pred count:5233step: 5 pos coverage:92.3076923076923
+>>>>>align(X0, X3, ) :- relatedsynonym(X0, X1, ) ; label(X1, X2, ) ; label(X3, X2, ) ;  pred count:5319step: 3 pos coverage:92.3076923076923
+>>>>>align(X0, X4, ) :- relatedsynonym(X0, X1, ) ; label(X1, X2, ) ; label(X4, X2, ) ; label(X4, X5, ) ; label(X4, X5, ) ;  pred count:5348step: 5 pos coverage:92.3076923076923
+>>>>>align(X0, X5, ) :- relatedsynonym(X0, X1, ) ; label(X1, X2, ) ; label(X3, X2, ) ; label(X3, X4, ) ; label(X5, X4, ) ;  pred count:5364step: 5 pos coverage:92.3076923076923
+>>>>>align(X0, X4, ) :- definition(X0, X1, ) ; definition(X2, X1, ) ; label(X2, X3, ) ; label(X4, X3, ) ;  pred count:5828step: 4 pos coverage:26.9230769230769
+>>>>>align(X0, X5, ) :- definition(X0, X1, ) ; definition(X2, X1, ) ; relatedsynonym(X2, X3, ) ; label(X3, X4, ) ; label(X5, X4, ) ;  pred count:5958step: 5 pos coverage:34.6153846153846
+>>>>>align(X2, X0, ) :- label(X0, X1, ) ; label(X2, X1, ) ;  pred count:11927step: 2 pos coverage:73.0769230769231

@@ -1,0 +1,34 @@
+   foreach (HashSet<Clause> ss in subset(set)) //kole zirmajmoe ha
+            {
+                if ( ss.Count > 0)
+                {
+                    Predicate newp = new Predicate();
+                    newp.q_side = pred.q_side.clone(); 
+                    
+                    foreach (Clause p1 in ss)
+                    {
+                        if(p1 != pred.q_side)
+                            newp.addPSide(p1.clone());
+                    }
+                    if (variablize(newp))
+                    {
+                        //TODO check comment
+                        if (/*newp.FullyVariable() && */ !contains(newp))
+                        {
+                            double posCoverage=0, negCoverage=0;
+                            computeCoverage(newp,pred.q_side.fact,ref posCoverage,ref negCoverage);
+                            if (posCoverage >= positiveThreshold && negCoverage <= negativeThreshold)
+                            {
+                                if (!isMoreGeneral(newp))
+                                {
+                                    //result.Add(newp.ToString() + " Pos Coverage: " + posCoverage + ", Neg Coverage: " + negCoverage);
+                                    newp.positiveCoverage = posCoverage;
+                                    newp.negativeCoverage = negCoverage;
+                                    newp.step = step;
+                                    predicates.Add(newp);
+                                }
+                            }
+                        }
+                    }
+                }
+           }

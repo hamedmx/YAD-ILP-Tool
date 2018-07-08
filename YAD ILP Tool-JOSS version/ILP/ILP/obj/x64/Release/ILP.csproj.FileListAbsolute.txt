@@ -1,0 +1,10 @@
+C:\Users\Ali\Desktop\ILP\ILP\ILP\bin\x64\Release\ILP.exe.config
+C:\Users\Ali\Desktop\ILP\ILP\ILP\bin\x64\Release\ILP.exe
+C:\Users\Ali\Desktop\ILP\ILP\ILP\bin\x64\Release\ILP.pdb
+C:\Users\Ali\Desktop\ILP\ILP\ILP\bin\x64\Release\SwiPlCs64.dll
+C:\Users\Ali\Desktop\ILP\ILP\ILP\obj\x64\Release\ILP.csprojResolveAssemblyReference.cache
+C:\Users\Ali\Desktop\ILP\ILP\ILP\obj\x64\Release\ILP.MainForm.resources
+C:\Users\Ali\Desktop\ILP\ILP\ILP\obj\x64\Release\ILP.Properties.Resources.resources
+C:\Users\Ali\Desktop\ILP\ILP\ILP\obj\x64\Release\ILP.csproj.GenerateResource.Cache
+C:\Users\Ali\Desktop\ILP\ILP\ILP\obj\x64\Release\ILP.exe
+C:\Users\Ali\Desktop\ILP\ILP\ILP\obj\x64\Release\ILP.pdb

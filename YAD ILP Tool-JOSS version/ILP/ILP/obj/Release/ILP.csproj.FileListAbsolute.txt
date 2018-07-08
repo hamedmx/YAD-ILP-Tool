@@ -1,0 +1,10 @@
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\bin\Release\ILP.exe.config
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\bin\Release\ILP.exe
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\bin\Release\ILP.pdb
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Release\ILP.MainForm.resources
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Release\ILP.Properties.Resources.resources
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Release\ILP.csproj.GenerateResource.Cache
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Release\ILP.exe
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Release\ILP.pdb
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Release\ILP.csprojResolveAssemblyReference.cache
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\bin\Release\SwiPlCs64.dll

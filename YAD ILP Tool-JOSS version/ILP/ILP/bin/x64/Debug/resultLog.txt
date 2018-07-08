@@ -1,0 +1,128 @@
+
+train: 179  test: 1337   
+train: 935  test: 581   
+train: 914  test: 602   
+train: 165  test: 1351     time: 636639
+train: 163  test: 1353   
+train: 175  test: 1341     time: 1039201
+train: 174  test: 1342     time: 78954
+train: 154  test: 1362     time: 340090
+train: 154  test: 1362     time: 72109
+train: 191  test: 135     time: 2144
+train: 199  test: 127     time: 2961
+train: 201  test: 125     time: 6855
+train: 182  test: 144     time: 13333
+train: 198  test: 128     time: 17730
+train: 298  test: 28     time: 31653
+train: 290  test: 36     time: 33809
+train: 303  test: 23   
+train: 300  test: 26     time: 4511
+train: 296  test: 30     time: 8859
+train: 303  test: 23     time: 16910
+train: 294  test: 32     time: 69434
+train: 303  test: 23     time: 17188
+train: 196  test: 130   
+train: 201  test: 125   
+train: 207  test: 119     time: 815323
+train: 207  test: 119   
+train: 197  test: 129     time: 2618
+train: 190  test: 136     time: 2513
+train: 295  test: 31     time: 4837
+train: 299  test: 27     time: 4487
+train: 299  test: 27     time: 11585
+train: 284  test: 42     time: 11212
+train: 20  test: 306   
+train: 189  test: 137   
+train: 200  test: 126     time: 144934
+train: 201  test: 125     time: 1559
+train: 224  test: 102     time: 1951
+train: 198  test: 128     time: 3300
+train: 195  test: 131     time: 4812
+train: 200  test: 126     time: 5251
+train: 201  test: 125     time: 5890
+train: 198  test: 128     time: 6083
+train: 188  test: 138   
+train: 0  test: 0     time: 12
+train: 39  test: 287     time: 8317
+train: 30  test: 296     time: 4654
+train: 35  test: 291     time: 5577
+train: 39  test: 287     time: 43789
+train: 45  test: 281     time: 7397
+train: 26  test: 300     time: 4950
+train: 31  test: 295   
+train: 191  test: 135   
+train: 42  test: 284     time: 2739
+train: 47  test: 279     time: 3630
+train: 44  test: 282     time: 3294
+train: 39  test: 287     time: 7712
+train: 34  test: 292     time: 7037
+train: 33  test: 293     time: 6903
+train: 32  test: 294     time: 29255
+train: 39  test: 287     time: 161917
+train: 35  test: 291     time: 57287
+train: 37  test: 289     time: 95700
+train: 37  test: 289     time: 76090
+train: 172  test: 154   
+train: 38  test: 288     time: 5845
+train: 31  test: 295     time: 28516
+train: 38  test: 288   
+train: 33  test: 293     time: 181639
+train: 43  test: 283     time: 731164
+train: 201  test: 125     time: 23181
+train: 189  test: 137     time: 41748
+train: 218  test: 108     time: 9780
+train: 186  test: 140     time: 22052
+train: 198  test: 128     time: 19208
+train: 291  test: 35     time: 24613
+train: 290  test: 36     time: 33421
+train: 300  test: 26     time: 34173
+train: 290  test: 36     time: 31019
+train: 182  test: 144     time: 6829
+train: 195  test: 131     time: 9029
+train: 193  test: 133     time: 8136
+train: 183  test: 143     time: 8957
+train: 184  test: 142     time: 9526
+train: 205  test: 121     time: 10633
+train: 195  test: 131     time: 8375
+train: 200  test: 126     time: 39051
+train: 191  test: 135     time: 3698
+train: 208  test: 118     time: 3756
+train: 290  test: 36     time: 14369
+train: 290  test: 36     time: 16951
+train: 287  test: 39     time: 14875
+train: 286  test: 40     time: 12361
+train: 302  test: 24     time: 23937
+train: 291  test: 35     time: 16134
+train: 291  test: 35     time: 16298
+train: 300  test: 26     time: 20574
+train: 296  test: 30     time: 18770
+train: 301  test: 25     time: 19634
+train: 924  test: 592   
+train: 0  test: 0     time: 23
+train: 0  test: 0     time: 8
+train: 0  test: 0     time: 9
+train: 0  test: 0     time: 9
+train: 0  test: 0     time: 9
+train: 0  test: 0     time: 8
+train: 0  test: 0     time: 9
+train: 928  test: 588     time: 13016
+train: 964  test: 552   
+train: 932  test: 584   
+train: 154  test: 1362     time: 44268
+train: 164  test: 1352     time: 56700
+train: 147  test: 1369     time: 28802
+train: 168  test: 1348     time: 68618
+train: 165  test: 1351     time: 144818
+train: 158  test: 1358     time: 72460
+train: 165  test: 1351     time: 65208
+train: 929  test: 587     time: 44508
+train: 168  test: 1348     time: 45989
+train: 173  test: 1343   
+train: 163  test: 1353     time: 75991
+train: 137  test: 1379     time: 34881
+train: 0  test: 0     time: 17
+train: 0  test: 0     time: 16
+train: 186  test: 1330   
+train: 185  test: 1331     time: 69548
+train: 185  test: 1331     time: 22706
+train: 147  test: 1369     time: 40360

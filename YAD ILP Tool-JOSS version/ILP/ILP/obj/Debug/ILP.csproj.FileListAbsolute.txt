@@ -1,0 +1,20 @@
+c:\users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\bin\Debug\ILP.exe.config
+c:\users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Debug\ILP.Properties.Resources.resources
+c:\users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Debug\ILP.csproj.GenerateResource.Cache
+c:\users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\bin\Debug\ILP.exe
+c:\users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\bin\Debug\ILP.pdb
+c:\users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Debug\ILP.exe
+c:\users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Debug\ILP.pdb
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Debug\ILP.MainForm.resources
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\bin\Debug\SwiPlCs64.dll
+C:\Users\kamandi\documents\visual studio 2015\Projects\ILP\ILP\obj\Debug\ILP.csprojResolveAssemblyReference.cache
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\bin\Debug\ILP.exe.config
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\bin\Debug\ILP.exe
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\bin\Debug\ILP.pdb
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\bin\Debug\SwiPlCs64.dll
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\obj\Debug\ILP.csprojResolveAssemblyReference.cache
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\obj\Debug\ILP.MainForm.resources
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\obj\Debug\ILP.Properties.Resources.resources
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\obj\Debug\ILP.csproj.GenerateResource.Cache
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\obj\Debug\ILP.exe
+C:\Users\Hamed\Desktop\ILP\ILP\ILP\obj\Debug\ILP.pdb
