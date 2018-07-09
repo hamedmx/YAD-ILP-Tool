@@ -26,16 +26,16 @@ bibliography: paper.bib
 Inductive logic learning is considered as one of the most prominent approaches for multi-dimensional and multi-tabular learning by relying on first-order logic to describe train data in the form of positive and negative examples which can find a set of existing rules and relations and can propose them in first-order logic format [@Muggleton1995], [@Lavrac1994].
 Generally, the inductive learning problem is defined as follows:
  - **Input:**
-    + Background knowledge, B, a set of Horn clauses.
-    + Positive examples E^+, a set of Horn clauses (typically ground literals).
-    + Negative examples E^-, a set of Horn clauses (typically ground literals).
+     + Background knowledge, B, a set of Horn clauses.
+     + Positive examples E^+, a set of Horn clauses (typically ground literals).
+     + Negative examples E^-, a set of Horn clauses (typically ground literals).
  - **Output:** 
-    + A hypothesis, H, a set of Horn clauses.
+     + A hypothesis, H, a set of Horn clauses.
  - **Problem Conditions:** 
-    + All the positive examples should be producible from combination of background knowledge and H, which it indicates the completeness criterion:<br/>
+     + All the positive examples should be producible from combination of background knowledge and H, which it indicates the completeness criterion:<br/>
     
 			$ \forall e \in E^+\colon B \wedge H \longrightarrow e $    (Completeness)<br/>
-    + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:<br/>
+     + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:<br/>
     
 			$$*\forall e \in E^-\colon B \wedge H \longrightarrow e*$$    (Consistency)<br/>
 	
@@ -53,10 +53,10 @@ Generally, this algorithm (Algorithm 1) has been presented as follows:
 ![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/algo%201.PNG)
 
 This tool has been implemented in C# and a screenshot of its GUI1 is depicted in Figure 1. The input arguments of YAD are:
- - The percentage of Train Examples (the remaining percentage will be Test Examples percentage for testing the generated generic logical rules on the data-set).
- - The number of steps (usually, it is set to the default value 4) which is used to generate a general predicate in every step of induce function (inverse resolution operations) in order to produce generic logical rules. So, for example, with four steps, the tool can produce general logical rules with at most four predicates in their right-hand side.
- - Try Count (usually, it is set to the default value 5) is the number of endeavors that the tool performs to create and generate a general logical rule.
- - Negative Threshold (usually, it is set to a low amount e.g. the default value 5) is the percentage of the whole negative examples that every produced generic logical rule can produce negative examples equal or lower than the selected percentage, otherwise, the produced logical rule is useless and it is not considered as an output generic logical rule.
+- The percentage of Train Examples (the remaining percentage will be Test Examples percentage for testing the generated generic logical rules on the data-set).
+- The number of steps (usually, it is set to the default value 4) which is used to generate a general predicate in every step of induce function (inverse resolution operations) in order to produce generic logical rules. So, for example, with four steps, the tool can produce general logical rules with at most four predicates in their right-hand side.
+- Try Count (usually, it is set to the default value 5) is the number of endeavors that the tool performs to create and generate a general logical rule.
+- Negative Threshold (usually, it is set to a low amount e.g. the default value 5) is the percentage of the whole negative examples that every produced generic logical rule can produce negative examples equal or lower than the selected percentage, otherwise, the produced logical rule is useless and it is not considered as an output generic logical rule.
 Also, the use cases and functions of this tool are as follows (respectively in use):
 1. **Open:** Opening a file (usually, a text file) consists of Background Knowledge (the lines should start with ‘B’), Positive Examples (the lines should start with ‘+’), and Negative Examples (the lines should start with ‘-’) in first-order logic format as logical rules.
 2. **Induce:** Producing general logical rules by inducing (using inverse resolution) on background knowledge.
@@ -77,7 +77,7 @@ The architecture of this ILP tool is shown in Figure 2. As it is obvious in this
 
  **User Interface:** It provides some necessary facilities and UI in order to present the input data and configure the model parameters for user. These user-configurable parameters were mentioned before in previous sections.<br/>
  **Rule Preparation:** This section has some tasks to read the input file, parse the information, and produce background knowledge and positive and negative examples set in appropriate form of the first-order logic format. All of the examples (positive and negative examples) are located in the format of a set of objects. Also, the division of the input data into the train and test sets is accomplished by this module.<br/>
- **Induction Engine:** This section forms the main part of the tool, which consists of three subsections:
+ **Induction Engine:** This section forms the main part of the tool, which consists of three subsections:<br/>
    - *Generalizer:* This subsection has a task to produce more general logical rules from positive examples. In the other words, this module receives a positive example and tries to generalize it as much as possible.
    - *Rule Checker:* The logical rules that are generated by generalizer, are controlled by this module to determine whether they satisfy the problem conditions (covering the positive examples and not covering the negative examples) or not. So, if the conditions of the desired logical rule are not covered, then it will not be accepted.
    - *Pruning Module:* This module has a task to prevent from the over-fitting of the model, otherwise, we probably have many logical rules that each of them satisfies only one or two positive examples, i.e. they do not have an adequate generality. Pruning operates in such a way that not only we can achieve the best results in terms of precision, but also the number of logical rules will be minimized.<br/>
