@@ -43,6 +43,7 @@ Generally, the inductive learning problem is defined as follows:
 It is remarkable to say that the symbols E^+, E^-, B, and H are proposed in first-order logic format.
 
 Due to the expressiveness and high flexibility of first-order logic, the inductive learning approach has high capability in discovering the relations. Also, since the set of logic’s rules is not restricted to a specific table or structure, it can be used in widespread areas and problems like finding relationships in social networks and discovering communication patterns in protein structures (bioinformatics problems).
+
 Despite of all the advantages that learning based on inductive logic has; in practice, it becomes a problem to search and find the optimal solution which with respect to the vastness of search space, it has no polynomial and deterministic solution. So, in order to solve it, we need to the heuristic and randomized algorithms.
 In recent years, many researches were performed in this area and numerous algorithms and tools were proposed such as FOIL [@Quinlan1993], [@Quinlan1990], Golem, ProGolem [@Muggleton2010], Aleph [@Srinivasan2007], and CIGOL.
 The algorithms provided so far for this problem, can be classified into two categories: top-down and bottom-up algorithms. In top-down algorithms, some relations are guessed (they are constructed) based on heuristic criteria and then, their validity is tested on train data. While learning algorithm conditions are satisfied, that relation is accepted. 
