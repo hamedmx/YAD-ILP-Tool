@@ -26,16 +26,20 @@ bibliography: paper.bib
 Inductive logic learning is considered as one of the most prominent approaches for multi-dimensional and multi-tabular learning by relying on first-order logic to describe train data in the form of positive and negative examples which can find a set of existing rules and relations and can propose them in first-order logic format [@Muggleton1995], [@Lavrac1994].
 Generally, the inductive learning problem is defined as follows:
  - **Input:**
-  + Background knowledge, B, a set of Horn clauses.
-  + Positive examples E^+, a set of Horn clauses (typically ground literals).
-  + Negative examples E^-, a set of Horn clauses (typically ground literals).
+    + Background knowledge, B, a set of Horn clauses.
+    + Positive examples E^+, a set of Horn clauses (typically ground literals).
+    + Negative examples E^-, a set of Horn clauses (typically ground literals).
  - **Output:** 
-  + A hypothesis, H, a set of Horn clauses.
- - Problem Conditions:
-  + All the positive examples should be producible from combination of background knowledge and H, which it indicates the completeness criterion:
-			*\forall e \in E^+\colon B \wedge H \longrightarrow e*    (Completeness)
-  + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
-			*\forall e \in E^-\colon B \wedge H \longrightarrow e*    (Consistency)
+    + A hypothesis, H, a set of Horn clauses.
+ - **Problem Conditions:**
+    + All the positive examples should be producible from combination of background knowledge and H, which it indicates the completeness criterion:
+    
+			$ \forall e \in E^+\colon B \wedge H \longrightarrow e $    (Completeness)
+
++ None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
+    
+			$$*\forall e \in E^-\colon B \wedge H \longrightarrow e*$$    (Consistency)
+
 It is remarkable to say that the symbols E^+, E^-, B, and H are proposed in first-order logic format.
 Due to the expressiveness and high flexibility of first-order logic, the inductive learning approach has high capability in discovering the relations. Also, since the set of logic’s rules is not restricted to a specific table or structure, it can be used in widespread areas and problems like finding relationships in social networks and discovering communication patterns in protein structures (bioinformatics problems).
 Despite of all the advantages that learning based on inductive logic has; in practice, it becomes a problem to search and find the optimal solution which with respect to the vastness of search space, it has no polynomial and deterministic solution. So, in order to solve it, we need to the heuristic and randomized algorithms.
