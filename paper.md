@@ -32,8 +32,8 @@ Generally, the inductive learning problem is defined as follows:
  - **Output:** 
     + A hypothesis, H, a set of Horn clauses.
  - **Problem Conditions:**
-    + All the positive examples should be producible from combination of background knowledge and H, which it indicates the completeness criterion:
-    
++ All the positive examples should be producible from combination of background knowledge and H, which it indicates the completeness criterion:
+
 			$ \forall e \in E^+\colon B \wedge H \longrightarrow e $    (Completeness)
 
 + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
