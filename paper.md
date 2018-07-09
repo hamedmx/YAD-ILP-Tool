@@ -33,9 +33,13 @@ Generally, the inductive learning problem is defined as follows:
     + A hypothesis, H, a set of Horn clauses.
  - **Problem Conditions:** 
     + All the positive examples should be producible from combination of background knowledge and H, which it indicates the completeness criterion:
-			$ \forall e \in E^+\colon B \wedge H \longrightarrow e $    (Completeness)
-+ None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
-			$$*\forall e \in E^-\colon B \wedge H \longrightarrow e*$$    (Consistency)
+			
+	$ \forall e \in E^+\colon B \wedge H \longrightarrow e $    (Completeness)
+
+    + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
+
+	$$*\forall e \in E^-\colon B \wedge H \longrightarrow e*$$    (Consistency)
+						
 It is remarkable to say that the symbols E^+, E^-, B, and H are proposed in first-order logic format.
 Due to the expressiveness and high flexibility of first-order logic, the inductive learning approach has high capability in discovering the relations. Also, since the set of logic’s rules is not restricted to a specific table or structure, it can be used in widespread areas and problems like finding relationships in social networks and discovering communication patterns in protein structures (bioinformatics problems).
 Despite of all the advantages that learning based on inductive logic has; in practice, it becomes a problem to search and find the optimal solution which with respect to the vastness of search space, it has no polynomial and deterministic solution. So, in order to solve it, we need to the heuristic and randomized algorithms.
