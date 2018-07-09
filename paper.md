@@ -33,8 +33,10 @@ Generally, the inductive learning problem is defined as follows:
     + A hypothesis, H, a set of Horn clauses.
  - **Problem Conditions:** 
     + All the positive examples should be producible from combination of background knowledge and H, which it indicates the completeness criterion:<br/>
+    
 			$ \forall e \in E^+\colon B \wedge H \longrightarrow e $    (Completeness)<br/>
     + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:<br/>
+    
 			$$*\forall e \in E^-\colon B \wedge H \longrightarrow e*$$    (Consistency)<br/>
 	
 It is remarkable to say that the symbols E^+, E^-, B, and H are proposed in first-order logic format.<br/>
