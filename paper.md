@@ -40,11 +40,11 @@ Generally, the inductive learning problem is defined as follows:
 
    - All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
 
-			$\forall e \in E^+\colon B \wedge H \rightarrow e$
+			$ \forall e \in E^+\colon B \wedge H \rightarrow e $		(Completeness)
 			
    - None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
 
-			$\forall e \in E^-\colon B \wedge H \nrightarrow e$		(Consistency)
+			$ \forall e \in E^-\colon B \wedge H \nrightarrow e $		(Consistency)
 			
 It is remarkable to say that the symbols $E^+$, $E^-$, *B*, and *H* are proposed in first-order logic format.
 
@@ -61,6 +61,7 @@ The tool YAD, is an implementation of a new bottom-up inductive logic learning a
 Generally, this algorithm (Algorithm 1) has been presented as follows:
 
 **Algorithm 1.** The proposed induction algorithm used in YAD ILP tool
+
 ![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/algorithm%201.PNG)\
 *\* Constructing a generalized logical rule using inverse resolution on a predicate P with background knowledge B and a hash map h.*
 
@@ -93,6 +94,7 @@ The architecture of this ILP tool is shown in Figure 2. As it is obvious in this
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/fig%202.PNG)\
 **Figure 2.** YAD ILP tool architecture
+
 
 **User Interface:** It provides some necessary facilities and UI in order to present the input data and configure the model parameters for user. These user-configurable parameters were mentioned before in previous sections.
  
