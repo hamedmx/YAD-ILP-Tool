@@ -26,23 +26,23 @@ Generally, the inductive learning problem is defined as follows:
 
 - **Input:**
 
-    - Background knowledge, *B*, a set of Horn clauses.
+   - Background knowledge, *B*, a set of Horn clauses.
     
-    - Positive examples $E^+$, a set of Horn clauses (typically ground literals).
+   - Positive examples $E^+$, a set of Horn clauses (typically ground literals).
     
-    - Negative examples $E^-$, a set of Horn clauses (typically ground literals).
+   - Negative examples $E^-$, a set of Horn clauses (typically ground literals).
 
 - **Output:** 
 
-    - A hypothesis, *H*, a set of Horn clauses.
+   - A hypothesis, *H*, a set of Horn clauses.
 
 - **Problem Conditions:**
 
-    - All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
+   - All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
 
 			$\forall e \in E^+\colon B \wedge H \rightarrow e$
 			
-    - None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
+   - None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
 
 			$\forall e \in E^-\colon B \wedge H \nrightarrow e$		(Consistency)
 			
@@ -66,23 +66,23 @@ Generally, this algorithm (Algorithm 1) has been presented as follows:
 
 This tool has been implemented in C# and a screenshot of its GUI is depicted in Figure 1. The input arguments of YAD are:
 
-- The percentage of Train Examples (the remaining percentage will be Test Examples percentage for testing the generated generic logical rules on the data-set).
+   - The percentage of Train Examples (the remaining percentage will be Test Examples percentage for testing the generated generic logical rules on the data-set).
 
-- The number of steps (usually, it is set to the default value 4) which is used to generate a general predicate in every step of induce function (inverse resolution operations) in order to produce generic logical rules. So, for example, with four steps, the tool can produce general logical rules with at most four predicates in their right-hand side.
+   - The number of steps (usually, it is set to the default value 4) which is used to generate a general predicate in every step of induce function (inverse resolution operations) in order to produce generic logical rules. So, for example, with four steps, the tool can produce general logical rules with at most four predicates in their right-hand side.
 
-- Try Count (usually, it is set to the default value 5) is the number of endeavors that the tool performs to create and generate a general logical rule.
+   - Try Count (usually, it is set to the default value 5) is the number of endeavors that the tool performs to create and generate a general logical rule.
 
 - Negative Threshold (usually, it is set to a low amount e.g. the default value 5) is the percentage of the whole negative examples that every produced generic logical rule can produce negative examples equal or lower than the selected percentage, otherwise, the produced logical rule is useless and it is not considered as an output generic logical rule.<br/>
 
 Also, the use cases and functions of this tool are as follows (respectively in use):
 
-1. **Open:** Opening a file (usually, a text file) consists of Background Knowledge (the lines should start with ‘B’), Positive Examples (the lines should start with ‘+’), and Negative Examples (the lines should start with ‘-’) in first-order logic format as logical rules.
+   1. **Open:** Opening a file (usually, a text file) consists of Background Knowledge (the lines should start with ‘B’), Positive Examples (the lines should start with ‘+’), and Negative Examples (the lines should start with ‘-’) in first-order logic format as logical rules.
 
-2. **Induce:** Producing general logical rules by inducing (using inverse resolution) on background knowledge.
+   2. **Induce:** Producing general logical rules by inducing (using inverse resolution) on background knowledge.
 
-3. **Prune:** Computing the measures such as Precision, Recall, Accuracy, and F-Measure for evaluation and comparison.
+   3. **Prune:** Computing the measures such as Precision, Recall, Accuracy, and F-Measure for evaluation and comparison.
 
-4. **Result Filtering:** Colorizing and filtering the results, i.e. Train and Test Examples in order to determine their coverage.
+   4. **Result Filtering:** Colorizing and filtering the results, i.e. Train and Test Examples in order to determine their coverage.
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/fig%201.PNG)\
 **Figure 1.** A screenshot of YAD
