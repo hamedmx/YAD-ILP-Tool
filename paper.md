@@ -7,16 +7,13 @@ tags:
   - CSharp
 authors:
   - name: Ali Kamandi
-    orcid:
     affiliation: 1
   - name: Hamed Karimi
     orcid: 0000-0002-9132-593X
-    affiliation: 2
+    affiliation: 1
 affiliations:
  - name: School of Engineering Science, College of Engineering, University of Tehran, Tehran, Iran
    index: 1
- - name: School of Engineering Science, College of Engineering, University of Tehran, Tehran, Iran
-   index: 2
 date: 09 July 2018
 bibliography: paper.bib
 ---
@@ -45,10 +42,10 @@ In recent years, many researches were performed in this area and numerous algori
 The algorithms provided so far for this problem, can be classified into two categories: top-down and bottom-up algorithms.<br/>
 In top-down algorithms, some relations are guessed (they are constructed) based on heuristic criteria and then, their validity is tested on train data. While learning algorithm conditions are satisfied, that relation is accepted.<br/>
 In bottom-up algorithms, the work is started from positive examples and the algorithm endeavors to find a more general form of a fact. In the other words, the desired relation is generalized and then, a more generic form of it is created. This work is continued until the generated rule covers none of the negative examples.<br/>
-The tool YAD, is an implementation of a new bottom-up inductive logic learning algorithm. Its main purpose is to reduce learning time. This is done in such a way that in every step, in order to choose some rules that can create more general rules with their own combinations, instead of quite random choice, choosing is performed from a set of relations (rules) that have a higher chance to generate the relevant rules.<br/>
+The tool ``YAD``, is an implementation of a new bottom-up inductive logic learning algorithm. Its main purpose is to reduce learning time. This is done in such a way that in every step, in order to choose some rules that can create more general rules with their own combinations, instead of quite random choice, choosing is performed from a set of relations (rules) that have a higher chance to generate the relevant rules.<br/>
 Generally, this algorithm (Algorithm 1) has been presented as follows:
 
-> **Algorithm 1.** The proposed induction algorithm used in YAD ILP tool
+> **Algorithm 1.** The proposed induction algorithm used in ``YAD`` ILP tool
 ![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/algorithm%201.PNG)
 > *\* Constructing a generalized logical rule using inverse resolution on a predicate P with background knowledge B and a hash map h.*
 
@@ -65,14 +62,14 @@ Also, the use cases and functions of this tool are as follows (respectively in u
 4. **Result Filtering:** Colorizing and filtering the results, i.e. Train and Test Examples in order to determine their coverage.
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/fig%201.PNG)
-> **Figure 1.** A screenshot of YAD
+> **Figure 1.** A screenshot of ``YAD``
 
 # Software Architecture
 
 The architecture of this ILP tool is shown in Figure 2. As it is obvious in this figure, the system consists of the following components:
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/fig%202.PNG)
-> **Figure 2.** YAD ILP tool architecture
+> **Figure 2.** ``YAD`` ILP tool architecture
 
  **User Interface:** It provides some necessary facilities and UI in order to present the input data and configure the model parameters for user. These user-configurable parameters were mentioned before in previous sections.<br/>
  **Rule Preparation:** This section has some tasks to read the input file, parse the information, and produce background knowledge and positive and negative examples set in appropriate form of the first-order logic format. All of the examples (positive and negative examples) are located in the format of a set of objects. Also, the division of the input data into the train and test sets is accomplished by this module.<br/>
