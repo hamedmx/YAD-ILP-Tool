@@ -34,21 +34,21 @@ Generally, the inductive learning problem is defined as follows:
 - **Problem Conditions:**
     + All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
 
-			$\forall e \in E^+\colon B \wedge H \to e$    (Completeness)
+			$\forall e \in E^+\colon B \wedge H \to e$    *(Completeness)*
     + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
 
-			$\forall e \in E^-\colon B \wedge H \to e$    (Consistency)
+			$\forall e \in E^-\colon B \wedge H \to e$    *(Consistency)*
 It is remarkable to say that the symbols $E^+$, $E^-$, *B*, and H are proposed in first-order logic format.<br/>
 Due to the expressiveness and high flexibility of first-order logic, the inductive learning approach has high capability in discovering the relations. Also, since the set of logic’s rules is not restricted to a specific table or structure, it can be used in widespread areas and problems like finding relationships in social networks and discovering communication patterns in protein structures (bioinformatics problems).<br/>
 Despite of all the advantages that learning based on inductive logic has; in practice, it becomes a problem to search and find the optimal solution which with respect to the vastness of search space, it has no polynomial and deterministic solution. So, in order to solve it, we need to the heuristic and randomized algorithms.<br/>
 In recent years, many researches were performed in this area and numerous algorithms and tools were proposed such as FOIL [@Quinlan1993], [@Quinlan1990], Golem, ProGolem [@Muggleton2010], Aleph [@Srinivasan2007], and CIGOL.
-The algorithms provided so far for this problem, can be classified into two categories: top-down and bottom-up algorithms. In top-down algorithms, some relations are guessed (they are constructed) based on heuristic criteria and then, their validity is tested on train data. While learning algorithm conditions are satisfied, that relation is accepted.<br/>
+The algorithms provided so far for this problem, can be classified into two categories: top-down and bottom-up algorithms.<br/>
+In top-down algorithms, some relations are guessed (they are constructed) based on heuristic criteria and then, their validity is tested on train data. While learning algorithm conditions are satisfied, that relation is accepted.<br/>
 In bottom-up algorithms, the work is started from positive examples and the algorithm endeavors to find a more general form of a fact. In the other words, the desired relation is generalized and then, a more generic form of it is created. This work is continued until the generated rule covers none of the negative examples.<br/>
 The tool YAD, is an implementation of a new bottom-up inductive logic learning algorithm. Its main purpose is to reduce learning time. This is done in such a way that in every step, in order to choose some rules that can create more general rules with their own combinations, instead of quite random choice, choosing is performed from a set of relations (rules) that have a higher chance to generate the relevant rules.<br/>
 Generally, this algorithm (Algorithm 1) has been presented as follows:
 
 > Algorithm 1. The proposed induction algorithm used in YAD ILP tool
-
 ![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/algo%201.PNG)
 > Algorithm 1. The proposed induction algorithm used in YAD ILP tool
 
