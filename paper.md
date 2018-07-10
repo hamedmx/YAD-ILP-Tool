@@ -7,7 +7,7 @@ tags:
   - CSharp
 authors:
   - name: Ali Kamandi
-    orcid: 0000-0000-0000-0000
+    orcid:
     affiliation: 1
   - name: Hamed Karimi
     orcid: 0000-0002-9132-593X
