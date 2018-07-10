@@ -34,11 +34,11 @@ Generally, the inductive learning problem is defined as follows:
 - **Problem Conditions:**
     + All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
 
-			$\forall e \in E^+\colon B \wedge H \to e$    *(Completeness)*
+			$\forall e \in E^+\colon B \wedge H \to e$		(Completeness)
     + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
 
-			$\forall e \in E^-\colon B \wedge H \to e$    *(Consistency)*
-It is remarkable to say that the symbols $E^+$, $E^-$, *B*, and H are proposed in first-order logic format.<br/>
+			$\forall e \in E^-\colon B \wedge H \to e$		(Consistency)
+It is remarkable to say that the symbols $E^+$, $E^-$, *B*, and *H* are proposed in first-order logic format.<br/>
 Due to the expressiveness and high flexibility of first-order logic, the inductive learning approach has high capability in discovering the relations. Also, since the set of logic’s rules is not restricted to a specific table or structure, it can be used in widespread areas and problems like finding relationships in social networks and discovering communication patterns in protein structures (bioinformatics problems).<br/>
 Despite of all the advantages that learning based on inductive logic has; in practice, it becomes a problem to search and find the optimal solution which with respect to the vastness of search space, it has no polynomial and deterministic solution. So, in order to solve it, we need to the heuristic and randomized algorithms.<br/>
 In recent years, many researches were performed in this area and numerous algorithms and tools were proposed such as FOIL [@Quinlan1993], [@Quinlan1990], Golem, ProGolem [@Muggleton2010], Aleph [@Srinivasan2007], and CIGOL.
@@ -65,7 +65,6 @@ Also, the use cases and functions of this tool are as follows (respectively in u
 4. **Result Filtering:** Colorizing and filtering the results, i.e. Train and Test Examples in order to determine their coverage.
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/fig%201.PNG)
-
 > Figure 1. A screenshot of YAD
 
 # Software Architecture
@@ -73,7 +72,6 @@ Also, the use cases and functions of this tool are as follows (respectively in u
 The architecture of this ILP tool is shown in Figure 2. As it is obvious in this figure, the system consists of the following components:
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/fig%202.PNG)
-
 > Figure 2. YAD ILP tool architecture
 
  **User Interface:** It provides some necessary facilities and UI in order to present the input data and configure the model parameters for user. These user-configurable parameters were mentioned before in previous sections.<br/>
