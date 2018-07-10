@@ -23,18 +23,26 @@ bibliography: paper.bib
 Inductive logic learning is considered as one of the most prominent approaches for multi-dimensional and multi-tabular learning by relying on first-order logic to describe train data in the form of positive and negative examples which can find a set of existing rules and relations and can propose them in first-order logic format [@Muggleton1995], [@Lavrac1994].
 
 Generally, the inductive learning problem is defined as follows:
-    - **Input:**
-        - Background knowledge, *B*, a set of Horn clauses.
-        - Positive examples $E^+$, a set of Horn clauses (typically ground literals).
-        - Negative examples $E^-$, a set of Horn clauses (typically ground literals).
-    - **Output:** 
-        + A hypothesis, *H*, a set of Horn clauses.
+
+- **Input:**
+
+    - Background knowledge, *B*, a set of Horn clauses.
+    
+    - Positive examples $E^+$, a set of Horn clauses (typically ground literals).
+    
+    - Negative examples $E^-$, a set of Horn clauses (typically ground literals).
+
+- **Output:** 
+
+    - A hypothesis, *H*, a set of Horn clauses.
+
 - **Problem Conditions:**
-    + All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
+
+    - All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
 
 			$\forall e \in E^+\colon B \wedge H \rightarrow e$		(Completeness)
 			
-    + None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
+    - None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
 
 			$\forall e \in E^-\colon B \wedge H \nrightarrow e$		(Consistency)
 			
@@ -58,15 +66,23 @@ Generally, this algorithm (Algorithm 1) has been presented as follows:
 > *\* Constructing a generalized logical rule using inverse resolution on a predicate P with background knowledge B and a hash map h.*
 
 This tool has been implemented in C# and a screenshot of its GUI is depicted in Figure 1. The input arguments of YAD are:
+
 - The percentage of Train Examples (the remaining percentage will be Test Examples percentage for testing the generated generic logical rules on the data-set).
+
 - The number of steps (usually, it is set to the default value 4) which is used to generate a general predicate in every step of induce function (inverse resolution operations) in order to produce generic logical rules. So, for example, with four steps, the tool can produce general logical rules with at most four predicates in their right-hand side.
+
 - Try Count (usually, it is set to the default value 5) is the number of endeavors that the tool performs to create and generate a general logical rule.
+
 - Negative Threshold (usually, it is set to a low amount e.g. the default value 5) is the percentage of the whole negative examples that every produced generic logical rule can produce negative examples equal or lower than the selected percentage, otherwise, the produced logical rule is useless and it is not considered as an output generic logical rule.<br/>
 
 Also, the use cases and functions of this tool are as follows (respectively in use):
+
 1. **Open:** Opening a file (usually, a text file) consists of Background Knowledge (the lines should start with ‘B’), Positive Examples (the lines should start with ‘+’), and Negative Examples (the lines should start with ‘-’) in first-order logic format as logical rules.
+
 2. **Induce:** Producing general logical rules by inducing (using inverse resolution) on background knowledge.
+
 3. **Prune:** Computing the measures such as Precision, Recall, Accuracy, and F-Measure for evaluation and comparison.
+
 4. **Result Filtering:** Colorizing and filtering the results, i.e. Train and Test Examples in order to determine their coverage.
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/fig%201.PNG)\
@@ -81,14 +97,21 @@ The architecture of this ILP tool is shown in Figure 2. As it is obvious in this
 
 **Figure 2.** YAD ILP tool architecture
 
- **User Interface:** It provides some necessary facilities and UI in order to present the input data and configure the model parameters for user. These user-configurable parameters were mentioned before in previous sections.<br/>
- **Rule Preparation:** This section has some tasks to read the input file, parse the information, and produce background knowledge and positive and negative examples set in appropriate form of the first-order logic format. All of the examples (positive and negative examples) are located in the format of a set of objects. Also, the division of the input data into the train and test sets is accomplished by this module.<br/>
- **Induction Engine:** This section forms the main part of the tool, which consists of three subsections:
-     - ***Generalizer:*** This subsection has a task to produce more general logical rules from positive examples. In the other words, this module receives a positive example and tries to generalize it as much as possible.
-     - ***Rule Checker:*** The logical rules that are generated by generalizer, are controlled by this module to determine whether they satisfy the problem conditions (covering the positive examples and not covering the negative examples) or not. So, if the conditions of the desired logical rule are not covered, then it will not be accepted.
-     - ***Pruning Module:*** This module has a task to prevent from the over-fitting of the model, otherwise, we probably have many  		logical rules that each of them satisfies only one or two positive examples, i.e. they do not have an adequate generality. 		Pruning operates in such a way that not only we can achieve the best results in terms of precision, but also the number of 		logical rules will be minimized.<br/>
- **Evaluation Module:** It has a task to execute the logical rules produced by induction module on the test data and evaluates the results. For this reason, the various measurements such as Precision, Recall, Accuracy, and F-Measure are computed and reported.<br/>
- **Shared Data:** The sections we have mentioned before, have access to a set of data which is the input and output data of ILP algorithm such as background knowledge set, positive and negative examples, and the set of produced logical rules by the algorithm.
+**User Interface:** It provides some necessary facilities and UI in order to present the input data and configure the model parameters for user. These user-configurable parameters were mentioned before in previous sections.
+ 
+**Rule Preparation:** This section has some tasks to read the input file, parse the information, and produce background knowledge and positive and negative examples set in appropriate form of the first-order logic format. All of the examples (positive and negative examples) are located in the format of a set of objects. Also, the division of the input data into the train and test sets is accomplished by this module.
+
+**Induction Engine:** This section forms the main part of the tool, which consists of three subsections:
+    
+   - ***Generalizer:*** This subsection has a task to produce more general logical rules from positive examples. In the other words, this module receives a positive example and tries to generalize it as much as possible.
+    
+   - ***Rule Checker:*** The logical rules that are generated by generalizer, are controlled by this module to determine whether they satisfy the problem conditions (covering the positive examples and not covering the negative examples) or not. So, if the conditions of the desired logical rule are not covered, then it will not be accepted.
+    
+   - ***Pruning Module:*** This module has a task to prevent from the over-fitting of the model, otherwise, we probably have many  		logical rules that each of them satisfies only one or two positive examples, i.e. they do not have an adequate generality. 		Pruning operates in such a way that not only we can achieve the best results in terms of precision, but also the number of 		logical rules will be minimized.
+    
+**Evaluation Module:** It has a task to execute the logical rules produced by induction module on the test data and evaluates the results. For this reason, the various measurements such as Precision, Recall, Accuracy, and F-Measure are computed and reported.
+
+**Shared Data:** The sections we have mentioned before, have access to a set of data which is the input and output data of ILP algorithm such as background knowledge set, positive and negative examples, and the set of produced logical rules by the algorithm.
 
 # Applications
 
