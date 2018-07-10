@@ -40,7 +40,7 @@ Generally, the inductive learning problem is defined as follows:
 
     - All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
 
-			$\forall e \in E^+\colon B \wedge H \rightarrow e$		(Completeness)
+			$\forall e \in E^+\colon B \wedge H \rightarrow e$
 			
     - None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
 
@@ -61,9 +61,8 @@ The tool YAD, is an implementation of a new bottom-up inductive logic learning a
 Generally, this algorithm (Algorithm 1) has been presented as follows:
 
 **Algorithm 1.** The proposed induction algorithm used in YAD ILP tool
-
 ![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/algorithm%201.PNG)\
-> *\* Constructing a generalized logical rule using inverse resolution on a predicate P with background knowledge B and a hash map h.*
+*\* Constructing a generalized logical rule using inverse resolution on a predicate P with background knowledge B and a hash map h.*
 
 This tool has been implemented in C# and a screenshot of its GUI is depicted in Figure 1. The input arguments of YAD are:
 
@@ -86,7 +85,6 @@ Also, the use cases and functions of this tool are as follows (respectively in u
 4. **Result Filtering:** Colorizing and filtering the results, i.e. Train and Test Examples in order to determine their coverage.
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/fig%201.PNG)\
-
 **Figure 1.** A screenshot of YAD
 
 # Software Architecture
@@ -94,7 +92,6 @@ Also, the use cases and functions of this tool are as follows (respectively in u
 The architecture of this ILP tool is shown in Figure 2. As it is obvious in this figure, the system consists of the following components:
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/fig%202.PNG)\
-
 **Figure 2.** YAD ILP tool architecture
 
 **User Interface:** It provides some necessary facilities and UI in order to present the input data and configure the model parameters for user. These user-configurable parameters were mentioned before in previous sections.
