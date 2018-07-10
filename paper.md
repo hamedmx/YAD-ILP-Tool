@@ -46,7 +46,7 @@ The tool ``YAD``, is an implementation of a new bottom-up inductive logic learni
 Generally, this algorithm (Algorithm 1) has been presented as follows:
 
 > **Algorithm 1.** The proposed induction algorithm used in ``YAD`` ILP tool
-![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/algorithm%201.PNG)
+![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/algorithm%201.PNG)
 > *\* Constructing a generalized logical rule using inverse resolution on a predicate P with background knowledge B and a hash map h.*
 
 This tool has been implemented in C# and a screenshot of its GUI1 is depicted in Figure 1. The input arguments of YAD are:
@@ -61,14 +61,14 @@ Also, the use cases and functions of this tool are as follows (respectively in u
 3. **Prune:** Computing the measures such as Precision, Recall, Accuracy, and F-Measure for evaluation and comparison.
 4. **Result Filtering:** Colorizing and filtering the results, i.e. Train and Test Examples in order to determine their coverage.
 
-![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/fig%201.PNG)
+![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/fig%201.PNG)
 > **Figure 1.** A screenshot of ``YAD``
 
 # Software Architecture
 
 The architecture of this ILP tool is shown in Figure 2. As it is obvious in this figure, the system consists of the following components:
 
-![](https://github.com/hamedmx/YAD-ILP-Tool/blob/master/fig%202.PNG)
+![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/fig%202.PNG)
 > **Figure 2.** ``YAD`` ILP tool architecture
 
  **User Interface:** It provides some necessary facilities and UI in order to present the input data and configure the model parameters for user. These user-configurable parameters were mentioned before in previous sections.<br/>
