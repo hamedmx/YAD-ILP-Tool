@@ -40,11 +40,11 @@ Generally, the inductive learning problem is defined as follows:
 
    - All the positive examples should be producible from combination of background knowledge and *H*, which it indicates the completeness criterion:
 
-		$\forall e \in E^+\colon B \wedge H \rightarrow e		(Completeness)$
+		$$\forall e \in E^+\colon B \wedge H \rightarrow e			(Completeness)$$
 
    - None of the negative examples should be producible, which it indicates the consistency criterion and also obviously keeps the Precision measure high:
 
-		$\forall e \in E^-\colon B \wedge H \nrightarrow e		(Consistency)$
+		$$\forall e \in E^-\colon B \wedge H \nrightarrow e			(Consistency)$$
 			
 It is remarkable to say that the symbols $E^+$, $E^-$, *B*, and *H* are proposed in first-order logic format.
 
