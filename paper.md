@@ -73,21 +73,21 @@ This tool has been implemented in C# and a screenshot of its GUI is depicted in 
 
    - The percentage of Train Examples (the remaining percentage will be Test Examples percentage for testing the generated generic logical rules on the data-set).
 
-   - The number of steps (usually, it is set to the default value 4) which is used to generate a general predicate in every step of induce function (inverse resolution operations) in order to produce generic logical rules. So, for example, with four steps, the tool can produce general logical rules with at most four predicates in their right-hand side.
+   - The number of steps (typically, it is set to the default value 4) which is used to generate a general predicate in every step of induce function (inverse resolution operations) in order to produce generic logical rules. So, for example, with four steps, the tool can produce general logical rules with at most four predicates in their right-hand side.
 
-   - Try Count (usually, it is set to the default value 5) is the number of endeavors that the tool performs to create and generate a general logical rule.
+   - Try Count (typically, it is set to the default value 5) is the number of endeavors that the tool performs to create and generate a general logical rule.
 
-- Negative Threshold (usually, it is set to a low amount e.g. the default value 5) is the percentage of the whole negative examples that every produced generic logical rule can produce negative examples equal or lower than the selected percentage, otherwise, the produced logical rule is useless and it is not considered as an output generic logical rule.
+- Negative Threshold (typically, it is set to a low amount e.g. the default value 5) is the percentage of the whole negative examples that every produced generic logical rule can produce negative examples equal or lower than the selected percentage, otherwise, the produced logical rule is useless and it is not considered as an output generic logical rule.
 
 Also, the use cases and functions of this tool are as follows (respectively in use):
 
-   1. **Open:** Opening a file (usually, a text file) consists of Background Knowledge (the lines should start with ‘B’), Positive Examples (the lines should start with ‘+’), and Negative Examples (the lines should start with ‘-’) in first-order logic format as logical rules.
+   1. **Open:** Opening a file (typically, a text file) consists of Background Knowledge lines (the lines should start with ‘B’ with a white-space after), Positive Examples lines (the lines should start with ‘+’ with a white-space after), and Negative Examples lines (the lines should start with ‘-’ with a white-space after) in first-order logic format as logical rules.
 
    2. **Induce:** Producing general logical rules by inducing (using inverse resolution) on background knowledge.
 
    3. **Prune:** Computing the measures such as Precision, Recall, Accuracy, and F-Measure for evaluation and comparison.
 
-   4. **Result Filtering:** Colorizing and filtering the results, i.e. Train and Test Examples in order to determine their coverage.
+   4. **Result Filtering:** Colorizing and filtering the results, i.e., Train and Test Examples in order to determine their coverage.
 
 ![](https://github.com/hamedmx/YAD-ILP-Tool/raw/master/fig%201.PNG)\
 **Figure 1.** A screenshot of YAD
