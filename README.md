@@ -12,14 +12,14 @@ This tool has been implemented in C# and the input parameters of YAD are as foll
   - The percentage of Train Examples (the remaining percentage will be Test Examples percentage for testing the generated 
   generic logical rules on the data-set).
 
-  - The number of steps (usually, it is set to the default value 4) which is used to generate a general predicate in every 
+  - The number of steps (typically, it is set to the default value 4) which is used to generate a general predicate in every 
   step of induce function (inverse resolution operations) in order to produce generic logical rules. So, for example, with four 
   steps, the tool can produce general logical rules with at most four predicates in their right-hand side.
 
-  - Try Count (usually, it is set to the default value 5) is the number of endeavors that the tool performs to create and 
+  - Try Count (typically, it is set to the default value 5) is the number of endeavors that the tool performs to create and 
   generate a general logical rule.
 
-  - Negative Threshold (usually, it is set to a low amount, e.g. the default value 5) is the percentage of the whole negative 
+  - Negative Threshold (typically, it is set to a low amount, e.g. the default value 5) is the percentage of the whole negative 
   examples that every produced generic logical rule can produce negative examples equal or lower than the selected percentage, 
   otherwise, the produced logical rule is useless and it is not considered as an output generic logical rule.
 
@@ -28,14 +28,14 @@ This tool has been implemented in C# and the input parameters of YAD are as foll
 YAD is so simple to use and there is no install instructions or guidelines to setup and install this tool. It can be executed 
 in all C# IDEs, e.g. Microsoft Visual Studio, and its source code is quite available in the repository. Although there is an 
 executable file (.exe file) of compiled source code as an output in the repository and obviously, it can be run itself without 
-any requirements or IDEs, the source code in the repository can be opened in a C# IDE and then, it can be recompiled and run to 
+any requirements or IDEs, the source code in the repository can be even opened in a C# IDE and then, it can be recompiled and run to 
 use.
 
 Also, the functions and usage of this tool are as follows (**respectively** in use):
 
-   1. **Open:** Opening a file (usually, a text file) consists of Background Knowledge (the lines should start with ‘B’), 
-   Positive Examples (the lines should start with ‘+’), and Negative Examples (the lines should start with ‘-’) in first-order 
-   logic format as logical rules.
+   1. **Open:** Opening a file (typically, a text file) consists of Background Knowledge lines (the lines should start with ‘B’ with a white-space after), Positive Examples lines (the lines should start with ‘+’ with a white-space after), and Negative Examples lines (the lines should start with ‘-’ with a white-space after) in first-order logic format as logical rules.
+   
+   *Due to the above instructions to open a valid and appropriate file in the tool, we have prepared a **sample** file which is *available in the repository, of anatomical data-sets called *Human* and *Mouse* anatomies to produce some valid general logical rules *in order to align these anatomical organs of these two different anatomies (Human and Mouse anatomies).
 
    2. **Induce:** Producing general logical rules by inducing (using inverse resolution) on input background knowledge and then, the 
    generated valid logical rules with execution time (run-time) will be shown. 
