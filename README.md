@@ -31,7 +31,7 @@ executable file (.exe file) of compiled source code as an output in the reposito
 any requirements or IDEs, the source code in the repository can be opened in a C# IDE and then, it can be recompiled and run to 
 use.
 
-Also, the functions and usage of this tool are as follows (respectively in use):
+Also, the functions and usage of this tool are as follows (**respectively** in use):
 
    1. **Open:** Opening a file (usually, a text file) consists of Background Knowledge (the lines should start with ‘B’), 
    Positive Examples (the lines should start with ‘+’), and Negative Examples (the lines should start with ‘-’) in first-order 
@@ -40,8 +40,7 @@ Also, the functions and usage of this tool are as follows (respectively in use):
    2. **Induce:** Producing general logical rules by inducing (using inverse resolution) on input background knowledge and then, the 
    generated valid logical rules with execution time (run-time) will be shown. 
 
-   3. **Prune:** Computing the measures such as Precision, Recall, Accuracy, and F-Measure for evaluation and comparison. This step 
-   may take several minutes to be done and then computed measures will be shown.
+   3. **Prune:** Computing the measures such as *Precision*, *Recall*, *Accuracy*, and *F-Measure* for evaluation and comparison. This step may take several minutes to be done and then computed measures will be shown.
 
    4. **Result Filtering:** Colorizing and filtering the results, i.e., Train and Test Examples in order to determine their coverage.
 
