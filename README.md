@@ -35,7 +35,7 @@ Also, the functions and usage of this tool are as follows (**respectively** in u
 
    1. **Open:** Opening a file (typically, a text file) consists of Background Knowledge lines (the lines should start with ‘B’ with a white-space after), Positive Examples lines (the lines should start with ‘+’ with a white-space after), and Negative Examples lines (the lines should start with ‘-’ with a white-space after) in first-order logic format as logical rules.
    
-   *Due to the above instructions to open a valid and appropriate file in the tool, we have prepared a **sample** file which is *available in the repository, of anatomical data-sets called *Human* and *Mouse* anatomies to produce some valid general logical rules *in order to align these anatomical organs of these two different anatomies (Human and Mouse anatomies).
+   *Due to the above instructions to open a valid and appropriate file in the tool, we have prepared a **sample** file which is* *available in the repository, of anatomical data-sets called Human and Mouse anatomies to produce some valid general logical rules in* *order to align these anatomical organs of these two different anatomies (Human and Mouse anatomies).*
 
    2. **Induce:** Producing general logical rules by inducing (using inverse resolution) on input background knowledge and then, the 
    generated valid logical rules with execution time (run-time) will be shown. 
