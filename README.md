@@ -58,3 +58,16 @@ chemistry to discover chemical bonds. In addition, it can be used in social netw
 between individuals, rules, and concepts. Generally, the application of this tool is in networks analysis (networks of individuals, 
 molecules, proteins, and etc.).
 
+## Community Guidelines
+
+### Contribution and Improvements
+
+If you have new enhancements, ideas, or new features; please clone the repository, make your desired changes, and report it at [Github Issues](https://github.com/hamedmx/YAD-ILP-Tool/issues) by opening a new issue with `improvement` label. It is highly likely that we can work on it together. 
+
+### Report Issues and Bugs
+
+If you have an issue or find a bug, please report it at [Github Issues](https://github.com/hamedmx/YAD-ILP-Tool/issues) by opening a new issue with `bugreport` label.  
+
+### How to Support
+
+If you have any questions or want to ask for support, please open a new issue with `support` label at [Github Issues](https://github.com/hamedmx/YAD-ILP-Tool/issues), or contact the authors directly via email.
