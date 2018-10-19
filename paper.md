@@ -28,7 +28,7 @@ Generally, the inductive learning problem is defined as follows:
 
 - **Input:**
 
-   - Background knowledge, *B*, a set of Horn clauses.
+   - Background knowledge *B*, a set of Horn clauses.
     
    - Positive examples $E^+$, a set of Horn clauses (typically ground literals).
     
@@ -36,7 +36,7 @@ Generally, the inductive learning problem is defined as follows:
 
 - **Output:** 
 
-   - A hypothesis, *H*, a set of Horn clauses.
+   - A hypothesis *H*, a set of Horn clauses.
 
 - **Problem Conditions:**
 
