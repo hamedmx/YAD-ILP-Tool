@@ -76,4 +76,4 @@ If you have any questions or want to ask for support, please open a new issue wi
 
 If you use this ILP tool or exploit this research, please kindly cite this paper as follows:
 
-Kamandi et al., (2018). YAD: A Learning-based Inductive Logic Programming Tool. Journal of Open Source Software, 3(30), 892. [DOI: 10.21105/joss.00892](https://doi.org/10.21105/joss.00892)
+**Kamandi et al., (2018). YAD: A Learning-based Inductive Logic Programming Tool. Journal of Open Source Software, 3(30), 892. [DOI: 10.21105/joss.00892](https://doi.org/10.21105/joss.00892)**
