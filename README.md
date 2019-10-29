@@ -60,7 +60,7 @@ molecules, proteins, and etc.).
 
 ## How to Cite
 
-If you use this ILP tool or exploit this research, please kindly cite this paper as follows:
+In case of using this ILP tool or exploiting this research, please kindly cite this paper as follows:
 
 **Kamandi et al., (2018). YAD: A Learning-based Inductive Logic Programming Tool. Journal of Open Source Software, 3(30), 892. [DOI: 10.21105/joss.00892](https://doi.org/10.21105/joss.00892)**
 
