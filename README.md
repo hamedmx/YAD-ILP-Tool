@@ -58,6 +58,12 @@ chemistry to discover chemical bonds. In addition, it can be used in social netw
 between individuals, rules, and concepts. Generally, the application of this tool is in networks analysis (networks of individuals, 
 molecules, proteins, and etc.).
 
+## How to Cite
+
+If you use this ILP tool or exploit this research, please kindly cite this paper as follows:
+
+**Kamandi et al., (2018). YAD: A Learning-based Inductive Logic Programming Tool. Journal of Open Source Software, 3(30), 892. [DOI: 10.21105/joss.00892](https://doi.org/10.21105/joss.00892)**
+
 ## Community Guidelines
 
 ### Contribution and Improvements
@@ -71,9 +77,3 @@ If you have an issue or find a bug, please report it at [Github Issues](https://
 ### How to Support
 
 If you have any questions or want to ask for support, please open a new issue with `support` label at [Github Issues](https://github.com/hamedmx/YAD-ILP-Tool/issues), or contact the authors directly via email.
-
-## How to Cite
-
-If you use this ILP tool or exploit this research, please kindly cite this paper as follows:
-
-**Kamandi et al., (2018). YAD: A Learning-based Inductive Logic Programming Tool. Journal of Open Source Software, 3(30), 892. [DOI: 10.21105/joss.00892](https://doi.org/10.21105/joss.00892)**
